@@ -1,0 +1,11 @@
+[[IgnoredVulns]]
+id = "GHSA-vpq2-c234-7xj6"
+reason = "Dev dependency only (@tootallnate/once)"
+
+[[IgnoredVulns]]
+id = "GHSA-vfj7-8cjw-p6xm"
+reason = "Dev dependency only (braces)"
+
+[[IgnoredVulns]]
+id = "GHSA-hp3w-g68c-fv3c"
+reason = "Dev dependency only (sprintf-js)"

@@ -1,3 +1,10 @@
-import type {components} from '@octokit/openapi-types'
+import type {GitHub} from '@actions/github/lib/utils'
 
-export type PR = components['schemas']['pull-request-simple']
+type ListPRsResult = Awaited<
+  ReturnType<
+    InstanceType<
+      typeof GitHub
+    >['rest']['repos']['listPullRequestsAssociatedWithCommit']
+  >
+>
+export type PR = ListPRsResult['data'][number]
